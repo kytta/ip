@@ -11,7 +11,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	ipStr = r.Header.Get("X-Real-Ip")
 
 	if ipStr == "" {
-		ipArr := strings.Split(r.Header.Get("X-Forwarded-For"))
+		ipArr := strings.Split(r.Header.Get("X-Forwarded-For"), ", ")
 		if len(ipArr) > 0 {
 			ipStr = ipArr[0]
 		}
