@@ -26,5 +26,5 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Header().Add("Content-Type", "text/plain")
-	fmt.Fprintf(w, ipStr)
+	fmt.Fprintf(w, ipStr+"\n")
 }
