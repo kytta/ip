@@ -1,9 +1,11 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "routes": {
-    "src": "/",
-    "dest": "/api/ip",
-    "methods": ["GET"]
-  }
+  "routes": [{
+      "src": "/",
+      "dest": "/api/ip",
+      "methods": [
+        "GET"
+      ]
+    }]
 }
