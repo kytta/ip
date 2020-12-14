@@ -25,5 +25,6 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		ipStr = "0.0.0.0"
 	}
 
+	w.Header().Add("Content-Type", "text/plain")
 	fmt.Fprintf(w, ipStr)
 }
