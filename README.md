@@ -5,6 +5,10 @@ A very simple endpoint to get your global IP address as `text/plain`
 
 ## Usage
 
+Just send a GET request to [ip.karamoff.dev](https://ip.karamoff.dev/) using your tool of choice (examples below)
+
+If the IP address could not be determined, `0.0.0.0` is returned.
+
 ### cURL
 
 ```sh
