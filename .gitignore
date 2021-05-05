@@ -1,27 +1,2 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,linux,windows
-# Modified by Nikita Karamov <nick@karamoff.dev>
-
-### Linux ###
-*~
-.fuse_hidden*
-.directory
-.nfs*
-
-
-### macOS ###
-._*
-.DS_Store
-.AppleDouble
-.LSOverride
-Icon
-
-
-
-### Windows ###
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
-*.stackdump
-[Dd]esktop.ini
-*.lnk
+node_modules/
+/.vercel/
