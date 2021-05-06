@@ -1,9 +1,8 @@
 {
-  "routes": [{
-      "src": "/",
-      "dest": "/api/ip",
-      "methods": [
-        "GET"
-      ]
-    }]
+	"rewrites": [
+		{
+			"source": "/",
+			"destination": "/api/ip"
+		}
+	]
 }

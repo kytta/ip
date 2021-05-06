@@ -1,0 +1,14 @@
+{
+	"name": "ip",
+	"version": "2.0.0-4",
+	"main": "api/ip.js",
+	"repository": "https://github.com/NickKaramoff/ip",
+	"author": "Nikita Karamov <nick@karamoff.dev>",
+	"license": "AGPL-3.0-only",
+	"dependencies": {
+		"@supercharge/request-ip": "^1.1.2"
+	},
+	"devDependencies": {
+		"@vercel/node": "^1.10.0"
+	}
+}
