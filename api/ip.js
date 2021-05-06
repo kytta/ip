@@ -9,7 +9,7 @@ import { getClientIp } from "@supercharge/request-ip";
 export default (req, res) => {
 	if (req.method !== 'GET') {
 		res.status(405).send("Method not allowed.");
-    return;
+		return;
 	}
 
 	const ip = getClientIp(req);
