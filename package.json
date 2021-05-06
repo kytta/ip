@@ -4,7 +4,7 @@
 	"main": "api/ip.js",
 	"repository": "https://github.com/NickKaramoff/ip",
 	"author": "Nikita Karamov <nick@karamoff.dev>",
-	"license": "MIT",
+	"license": "AGPL-3.0-only",
 	"dependencies": {
 		"@supercharge/request-ip": "^1.1.2"
 	},
