@@ -7,6 +7,10 @@ import { getClientIp } from "@supercharge/request-ip";
  * @param {import("@vercel/node").VercelResponse} res
  */
 export default (req, res) => {
+	if (req.method !== 'GET') {
+		res.status(405).send("Method not allowed.");
+	}
+
 	const ip = getClientIp(req);
 	res.status(ip ? 200 : 404).send(ip ? ip : "0.0.0.0");
 }
