@@ -25,6 +25,8 @@ import { getClientIp } from "@supercharge/request-ip";
  * @param {import("@vercel/node").VercelResponse} res
  */
 export default (req, res) => {
+	res.setHeader("Content-Type", "text/plain");
+
 	if (req.method !== 'GET') {
 		res.status(405).send("Method not allowed.");
 		return;

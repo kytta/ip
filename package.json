@@ -1,6 +1,6 @@
 {
 	"name": "ip",
-	"version": "2.0.0-3",
+	"version": "2.0.0-4",
 	"main": "api/ip.js",
 	"repository": "https://github.com/NickKaramoff/ip",
 	"author": "Nikita Karamov <nick@karamoff.dev>",
