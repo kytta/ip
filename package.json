@@ -2,8 +2,8 @@
 	"name": "ip",
 	"version": "2.0.0",
 	"main": "api/ip.js",
-	"repository": "https://github.com/NickKaramoff/ip",
-	"author": "Nikita Karamov <nick@karamoff.dev>",
+	"repository": "https://github.com/kytta/ip",
+	"author": "Nikita Karamov <me@kytta.dev>",
 	"license": "AGPL-3.0-only",
 	"private": true,
 	"dependencies": {

@@ -1,34 +1,34 @@
-# NickKaramoff/ip
+# kytta/ip
 
 > A very simple endpoint to get your global IP address
 
 ## Usage
 
-Just send a GET request to [ip.karamoff.dev](https://ip.karamoff.dev/) using your tool of choice (examples below). In response, you'll get the IP address as `text/plain`. If the IP address could not be determined, `0.0.0.0` will be returned.
+Just send a GET request to [ip.kytta.dev](https://ip.kytta.dev/) using your tool of choice (examples below). In response, you'll get the IP address as `text/plain`. If the IP address could not be determined, `0.0.0.0` will be returned.
 
 ### cURL
 
 ```sh
-curl -L ip.karamoff.dev
+curl -L ip.kytta.dev
 ```
 
 ### wget
 
 ```sh
-wget -qO- ip.karamoff.dev
+wget -qO- ip.kytta.dev
 ```
 
 ### HTTPie
 
 ```sh
-http -bF ip.karamoff.dev
+http -bF ip.kytta.dev
 ```
 
 ## Deploy
 
 Don't trust me? Deploy it yourself:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FNickKaramoff%2Fip)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fkytta%2Fip)
 
 ## Licence
 
