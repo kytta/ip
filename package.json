@@ -10,6 +10,6 @@
 		"@supercharge/request-ip": "^1.1.2"
 	},
 	"devDependencies": {
-		"@vercel/node": "^1.10.0"
+		"@vercel/node": "^1.12.1"
 	}
 }
