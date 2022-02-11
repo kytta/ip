@@ -1,10 +1,13 @@
-# kytta/ip
+# [kytta/ip](https://codeberg.org/kytta/ip)
 
-> A very simple endpoint to get your global IP address
+> A very simple endpoint to get your public IP address
 
 ## Usage
 
-Just send a GET request to [ip.kytta.dev](https://ip.kytta.dev/) using your tool of choice (examples below). In response, you'll get the IP address as `text/plain`. If the IP address could not be determined, `0.0.0.0` will be returned.
+Just send a GET request to [ip.kytta.dev](https://ip.kytta.dev/) using your
+tool of choice (examples below). In response, you'll get the IP address as
+`text/plain`. If the IP address could not be determined, `0.0.0.0` will be
+returned.
 
 ### cURL
 
@@ -21,7 +24,7 @@ wget -qO- ip.kytta.dev
 ### HTTPie
 
 ```sh
-http -bF ip.kytta.dev
+https -b ip.kytta.dev
 ```
 
 ## Deploy
@@ -32,4 +35,8 @@ Don't trust me? Deploy it yourself:
 
 ## Licence
 
-[AGPL-3.0-only](https://spdx.org/licenses/AGPL-3.0-only.html) © 2021 Nikita Karamov
+[AGPL-3.0-only](https://spdx.org/licenses/AGPL-3.0-only.html) © 2021–2022 [Nikita Karamov](https://www.kytta.dev/)
+
+---
+
+This project is hosted on Codeberg: <https://codeberg.org/kytta/ip>
