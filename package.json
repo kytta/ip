@@ -2,7 +2,7 @@
 	"name": "ip",
 	"version": "2.0.1",
 	"main": "api/ip.js",
-	"repository": "https://github.com/kytta/ip",
+	"repository": "https://codeberg.org/kytta/ip",
 	"author": "Nikita Karamov <me@kytta.dev>",
 	"license": "AGPL-3.0-only",
 	"private": true,
