@@ -1,4 +1,4 @@
-# [kytta/ip](https://codeberg.org/kytta/ip)
+# kytta/ip
 
 > A very simple endpoint to get your public IP address
 
@@ -39,4 +39,4 @@ Don't trust me? Deploy it yourself:
 
 ---
 
-This project is hosted on Codeberg: <https://codeberg.org/kytta/ip>
+This project is hosted on GitHub: <https://github.com/kytta/ip>
