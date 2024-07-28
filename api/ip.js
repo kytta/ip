@@ -1,6 +1,6 @@
 /*!
  * ip -- A very simple endpoint to get your global IP address
- * Copyright (C) 2021  Nikita Karamov
+ * Copyright (C) 2021–2024  Nikita Karamov
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published
