@@ -17,8 +17,15 @@
 	header -Server
 	templates
 
-	handle {
+	@get method GET
+
+	handle @get {
 		header Content-Type text/plain
 		respond `{{ .ClientIP }}`
+	}
+
+	handle {
+		header Allow "GET"
+		respond 405
 	}
 }
