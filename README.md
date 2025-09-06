@@ -1,3 +1,11 @@
+# ip is now on Codeberg
+
+I've had enough with GitHub. This repository is now on Codeberg: https://codeberg.org/kytta/ip.git
+
+The repository on GitHub will stay archived (read-only) for a few months before I delete it for good.
+
+<details><summary>Previous README</summary>
+
 # kytta/ip
 
 A very simple endpoint to get your public IP address. It's so simple, it runs in
@@ -52,3 +60,5 @@ http ip.kytta.dev
 ## Licence
 
 [AGPL-3.0-only](https://spdx.org/licenses/AGPL-3.0-only.html) © 2025 [Nikita Karamov](https://www.kytta.dev/)
+
+</details>
