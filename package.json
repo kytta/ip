@@ -6,9 +6,6 @@
 	"author": "Nikita Karamov <me@kytta.dev>",
 	"license": "AGPL-3.0-only",
 	"private": true,
-	"dependencies": {
-		"@supercharge/request-ip": "^1.1.2"
-	},
 	"devDependencies": {
 		"@vercel/node": "^3.2.7"
 	}
