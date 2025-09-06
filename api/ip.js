@@ -19,7 +19,7 @@
 /**
  * Returns the IP address of the request from the headers.
  *
- * @param {import("@vercel/node").VercelRequest} req The incoming request object.
+ * @param {Request} req The incoming request object.
  * @returns {string | undefined} The IP address of the request.
  */
 function getClientIp(req) {
@@ -29,17 +29,14 @@ function getClientIp(req) {
 /**
  * Handles request and returns user's IP address in response
  *
- * @param {import("@vercel/node").VercelRequest} req
- * @param {import("@vercel/node").VercelResponse} res
+ * @param {Request} req
+ * @return {Response}
  */
-export default (req, res) => {
-	res.setHeader("Content-Type", "text/plain");
-
-	if (req.method !== 'GET') {
-		res.status(405).send("Method not allowed.");
-		return;
-	}
-
+export function GET(req) {
 	const ip = getClientIp(req);
-	res.status(ip ? 200 : 404).send(ip ? ip : "0.0.0.0");
+
+	return new Response(ip ?? "0.0.0.0", {
+		headers: { "Content-Type": "text/plain" },
+		status: ip ? 200 : 404,
+	});
 }

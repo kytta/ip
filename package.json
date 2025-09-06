@@ -5,8 +5,5 @@
 	"repository": "https://github.com/kytta/ip",
 	"author": "Nikita Karamov <me@kytta.dev>",
 	"license": "AGPL-3.0-only",
-	"private": true,
-	"devDependencies": {
-		"@vercel/node": "^3.2.7"
-	}
+	"private": true
 }
