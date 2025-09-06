@@ -52,7 +52,3 @@ http ip.kytta.dev
 ## Licence
 
 [AGPL-3.0-only](https://spdx.org/licenses/AGPL-3.0-only.html) © 2025 [Nikita Karamov](https://www.kytta.dev/)
-
----
-
-This project is hosted on GitHub: <https://github.com/kytta/ip>
