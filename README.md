@@ -1,18 +1,18 @@
 # kytta/ip
 
-> A very simple endpoint to get your public IP address
+A very simple endpoint to get your public IP address. It's so simple, it runs in
+your reverse proxy!
 
 ## Usage
 
 Just send a GET request to [ip.kytta.dev](https://ip.kytta.dev/) using your
 tool of choice (examples below). In response, you'll get the IP address as
-`text/plain`. If the IP address could not be determined, `0.0.0.0` will be
-returned.
+`text/plain`.
 
 ### cURL
 
 ```sh
-curl -L ip.kytta.dev
+curl ip.kytta.dev
 ```
 
 ### wget
@@ -24,18 +24,34 @@ wget -qO- ip.kytta.dev
 ### HTTPie
 
 ```sh
-https -b ip.kytta.dev
+http ip.kytta.dev
 ```
 
 ## Deploy
 
-Don't trust me? Deploy it yourself:
+1. Download [ip.caddyfile](./ip.caddyfile) and place it in `/etc/caddy/`
+   (or anywhere else where Caddy can read it)
+2. Import the file in your main Caddyfile:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fkytta%2Fip)
+   ```caddyfile
+   import "ip.caddyfile"
+   ```
+3. Import the `ip` snippet in your site block:
+
+   ```caddyfile
+   https://ip.example.com,
+   http://ip.example.com {
+     import ip
+   }
+   ```
+
+   **Note:** You should include both http and https to disable auto redirect.
+             This makes it more accessible for tools like cURL that don't follow
+             redirects and use `http://` by default.
 
 ## Licence
 
-[AGPL-3.0-only](https://spdx.org/licenses/AGPL-3.0-only.html) © 2021–2022 [Nikita Karamov](https://www.kytta.dev/)
+[AGPL-3.0-only](https://spdx.org/licenses/AGPL-3.0-only.html) © 2025 [Nikita Karamov](https://www.kytta.dev/)
 
 ---
 
