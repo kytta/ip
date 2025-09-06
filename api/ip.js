@@ -1,6 +1,6 @@
 /*!
  * ip -- A very simple endpoint to get your global IP address
- * Copyright (C) 2021  Nikita Karamov
+ * Copyright (C) 2021, 2025  Nikita Karamov
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published
@@ -16,22 +16,27 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import { getClientIp } from "@supercharge/request-ip";
+/**
+ * Returns the IP address of the request from the headers.
+ *
+ * @param {Request} req The incoming request object.
+ * @returns {string | undefined} The IP address of the request.
+ */
+function getClientIp(req) {
+	return req.headers.get("x-real-ip") ?? undefined;
+}
 
 /**
  * Handles request and returns user's IP address in response
  *
- * @param {import("@vercel/node").VercelRequest} req
- * @param {import("@vercel/node").VercelResponse} res
+ * @param {Request} req
+ * @return {Response}
  */
-export default (req, res) => {
-	res.setHeader("Content-Type", "text/plain");
-
-	if (req.method !== 'GET') {
-		res.status(405).send("Method not allowed.");
-		return;
-	}
-
+export function GET(req) {
 	const ip = getClientIp(req);
-	res.status(ip ? 200 : 404).send(ip ? ip : "0.0.0.0");
+
+	return new Response(ip ?? "0.0.0.0", {
+		headers: { "Content-Type": "text/plain" },
+		status: ip ? 200 : 404,
+	});
 }
