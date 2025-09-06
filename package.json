@@ -1,6 +1,6 @@
 {
 	"name": "ip",
-	"version": "2.0.2",
+	"version": "2.1.0",
 	"main": "api/ip.js",
 	"type": "module",
 	"repository": "https://github.com/kytta/ip",
