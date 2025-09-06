@@ -17,15 +17,23 @@
 	header -Server
 	templates
 
+	@read method HEAD GET
 	@get method GET
+	@notoptions not method OPTIONS
 
-	handle @get {
+	handle @read {
 		header Content-Type text/plain
-		respond `{{ .ClientIP }}`
+
+		handle @get {
+			respond `{{ .ClientIP }}`
+		}
 	}
 
 	handle {
-		header Allow "GET"
-		respond 405
+		header Allow "GET, HEAD, OPTIONS"
+
+		handle @notoptions {
+			respond 405
+		}
 	}
 }
